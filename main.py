@@ -24,8 +24,8 @@ def main():
     model = TranscriberModels.get_model()
 
     transcriber = AudioTranscriber(speaker_audio_recorder.source, model)
-    while True:
-        transcriber.transcribe_audio_queue(audio_queue)
+    # while True:
+    transcriber.transcribe_audio_queue(audio_queue)
 
 
 if __name__ == "__main__":
